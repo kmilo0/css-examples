@@ -1,6 +1,6 @@
 # css-examples
 
-- background: usage of a background image
+- [background](background/sandbox.html): usage of a background image
 - border-box: example of content-box vs border-box
 - default-elements-margins: default margins of some elements in Chrome
 - hero: hero element using flex.
