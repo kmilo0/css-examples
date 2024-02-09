@@ -9,4 +9,3 @@
 - modal: modal element using z-index and position fixed.
 - positioning: elements positioned with relative, absolute, and one inside the other.
 - sandbox: sandbox to try CSS code.
-- vertical-align:
