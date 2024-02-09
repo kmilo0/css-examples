@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+.message::after {
+  content: "Width less than 40em";
+}
+
+/* minimum width 40em (but could be more) */
+@media (min-width: 40em) {
+  .message::after {
+    content: "@media minimum width 40em (but could be more)";
+  }
+}

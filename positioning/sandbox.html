@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="sandbox.css" />
+    <style>
+      .normal-flow {
+        outline: 1px solid green;
+      }
+
+      .relative {
+        position: relative;
+        top: 100px;
+
+        background: gray;
+        height: 150px;
+      }
+
+      .absolute {
+        position: absolute;
+        top: 75px;
+
+        background: blue;
+        color: white;
+        height: 100px;
+      }
+
+      .absolute2 {
+        position: absolute;
+        top: 200px;
+
+        background: blue;
+        color: white;
+        height: 100px;
+      }
+
+      .relative2 {
+        position: relative;
+
+        background: yellow;
+        height: 100px;
+        width: 90%;
+        /* Changing the default overlap  */
+        z-index: 10;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="normal-flow">Normal flow</div>
+
+    <div class="relative">
+      Relative. Moved 100px from it's normal flow position.
+      <div class="absolute">
+        Absolute inside relative. moved 75px from the postions of the relative.
+      </div>
+      <div class="absolute2">
+        Absolute inside relative. moved 200px from the postions of the relative.
+      </div>
+    </div>
+
+    <div style="margin: 15rem"></div>
+
+    <div class="relative">
+      Relative
+      <div class="relative2">
+        Relative inside relative. Doesn't overlap by default but that can be
+        changed with z-index
+      </div>
+      <div class="absolute">Absolute inside relative. Overlaps by default</div>
+    </div>
+  </body>
+</html>
